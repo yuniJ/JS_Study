@@ -28,6 +28,15 @@ const hours = Math.floor(
 const minutes = Math.floor((resultTime % (1000 * 60 * 60)) / (1000 * 60));
 const seconds = Math.floor((resultTime % (1000 * 60)) / 1000);
 
-const output = day + '일 ' + hours + '시간 ' + minutes + '분 ' + seconds + '초';
+const output =
+  '남은시간 ' +
+  day +
+  '일 ' +
+  hours +
+  '시간 ' +
+  minutes +
+  '분 ' +
+  seconds +
+  '초';
 
 console.log(output);
