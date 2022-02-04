@@ -1,5 +1,3 @@
-import { question } from 'readline-sync';
-
 // 문제 3
 // 'What do you call a bear with no teeth?'라는 농담을 표시하고,
 // 다음줄에 'A gummy bear!'라는 답을 표시하는 코드를 한줄로 만들자.
