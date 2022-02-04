@@ -1,0 +1,25 @@
+{
+  "name": "js_study",
+  "version": "1.0.0",
+  "description": "learning-js-master",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuniJ/JS_Study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "xo": {
+    "space": true,
+    "prettier": true
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "xo": "^0.47.0"
+  }
+}
