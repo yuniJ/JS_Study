@@ -16,27 +16,33 @@ import { question } from 'readline-sync';
 
 const date = question('d-day 날짜를 0000-00-00 형식으로 입력해주세요...');
 
-const dDay = new Date(date);
+function timer(date) {
+  const dDay = new Date(date);
+  const currentDay = new Date();
+  const resultTime = dDay.getTime() - currentDay.getTime();
 
-const currentDay = new Date();
-const resultTime = dDay.getTime() - currentDay.getTime();
+  const day = Math.floor(resultTime / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (resultTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((resultTime % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((resultTime % (1000 * 60)) / 1000);
 
-const day = Math.floor(resultTime / (1000 * 60 * 60 * 24));
-const hours = Math.floor(
-  (resultTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-);
-const minutes = Math.floor((resultTime % (1000 * 60 * 60)) / (1000 * 60));
-const seconds = Math.floor((resultTime % (1000 * 60)) / 1000);
+  const output =
+    '남은시간 ' +
+    day +
+    '일 ' +
+    hours +
+    '시간 ' +
+    minutes +
+    '분 ' +
+    seconds +
+    '초';
 
-const output =
-  '남은시간 ' +
-  day +
-  '일 ' +
-  hours +
-  '시간 ' +
-  minutes +
-  '분 ' +
-  seconds +
-  '초';
+  console.log(output);
+}
 
-console.log(output);
+const RepeatTimer = setInterval(() => timer(date), 1000);
+setTimeout(() => {
+  clearInterval(RepeatTimer);
+}, 5000);
