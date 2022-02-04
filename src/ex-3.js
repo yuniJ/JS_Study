@@ -7,7 +7,9 @@ import { question } from 'readline-sync';
 // 두 줄의 문장을 한 구문(명령어)으로 출력해보자.
 // 힌트 : js escape character 로 검색
 
-// 변수2개 저장
+// js escape character (문자열 표현): 작은 따옴표:  \', 큰따옴표: \” , 줄바꿈: \n, 역슬래시 : \\
+
+// 변수 저장
 // 줄바꿈 출력
 
 const sentence = "' What do you call a bear with no teeth?' \n'A gummy bear!'";
