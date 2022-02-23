@@ -12,9 +12,9 @@ let output = '';
 
 if (userInfo >= 18) {
   output = 'You can vote';
-} else if (userInfo >= 17) {
+} else if (userInfo === '17') {
   output = 'You can learn to drive';
-} else if (userInfo >= 16) {
+} else if (userInfo === '16') {
   output = 'You can buy a lottery ticket';
 } else {
   output = 'You can go Trick-or-Treating';
