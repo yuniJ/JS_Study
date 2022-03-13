@@ -21,6 +21,7 @@ while (result) {
   const addFriend = question(
     '다른 사람을 더 초대하고 싶으신가요? y,n 으로 대답해주세요.'
   );
+
   if (addFriend !== 'y') {
     result = false;
   }
