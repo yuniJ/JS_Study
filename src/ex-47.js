@@ -23,8 +23,8 @@ while (result) {
   );
   if (questionNumber === 'y') {
     const addNumber = question(num + '번째 숫자를 입력해주세요 ');
-    num++;
     total += Number(addNumber);
+    num++;
     console.log('현재까지 합친 숫자 : ' + total);
   } else {
     console.log('총합 : ' + total);
