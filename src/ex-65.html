@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex. 65</title>
+  </head>
+  <body>
+    <!-- 그림이 그려질 영역 -->
+    <canvas id="real-turtle"></canvas>
+    <script src="https://unpkg.com/real-turtle"></script>
+    <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+    <script>
+      const t =turtle
+      drawNumber()
+      function drawNumber(){
+        //1
+        t.setPosition(250, 550)
+        .left(0)
+        .forward(100)
+        .right(90);
+
+        space()
+
+        //2
+        t.forward(80)
+        .right(90)
+        .forward(50)
+        .right(90)
+        .forward(80)
+        .left(90)
+        .forward(50)
+        .left(90)
+        .forward(80)
+
+        
+        space();
+
+        //3
+        t.forward(80)
+        .left(90)
+        .forward(50)
+        .left(90)
+        .forward(80)
+        .back(80)
+        .right(90)
+        .forward(50)
+        .left(90)
+        .forward(80)
+      }
+      
+      function space() {
+        t.penUp()
+          .forward(50)
+          .penDown()
+      }
+    </script>
+  </body>
+</html>

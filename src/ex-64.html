@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ex. 60</title>
+    <title>Ex. 64</title>
   </head>
   <body>
     <!-- 그림이 그려질 영역 -->
@@ -12,30 +12,18 @@
     <script src="https://unpkg.com/real-turtle"></script>
     <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
     <script>
-      // 여기서 시작
-      const color = ['red','yellow', 'blue']
-
-      for (let index = 0; index < 3; index++) {
-        drawSqure(color[index])//.setFillStyle('red')
+      const t =turtle
+      for (let index = 0; index < 5; index++) {
+        if(index===0) t.setPosition(450, 550).beginPath().setFillStyle('yellow');
+        drawStar();
+        if(index===4) t.closePath().fill();
       }  
-        function drawSqure(color){
-          
-          turtle
-          .beginPath()
+        function drawStar(){
+          t
+          .left(48)
           .forward(100)
-          .right(90)
+          .right(120)
           .forward(100)
-          .right(90)
-          .forward(100)
-          .right(90)
-          .forward(100)
-          .closePath()
-          .setFillStyle(color)
-          .fill()
-          
-          .penUp()
-          .forward(50)
-          .penDown();
         }
       
     </script>
