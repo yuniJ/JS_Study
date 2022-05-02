@@ -1,4 +1,3 @@
-import { question } from 'readline-sync';
 // 문제 089
 // 정수들을 저장할 배열을 생성한다.
 // 임의의 수 다섯 개를 생성하고 배열에 저장한다.
@@ -22,7 +21,7 @@ import { question } from 'readline-sync';
 // .sort([compareFunction]) : 배열 정렬, el 문자열로 취급, 유니코드 순서로 정렬
 
 function setRandomNumber() {
-  const number = Math.random() * 100 + 1; //100까지
+  const number = Math.random() * 100 + 1; // 100까지
   const randomNumber = Math.floor(number);
   return randomNumber;
 }

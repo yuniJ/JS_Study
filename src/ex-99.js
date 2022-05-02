@@ -6,16 +6,15 @@ import { question } from 'readline-sync';
 // 마지막으로 그 행 전체를 다시 출력하라.
 
 const array = [
-  ['', 0, 1, 2],
-  [0, 2, 5, 8],
-  [1, 3, 7, 4],
-  [2, 1, 6, 9],
-  [3, 4, 2, 0],
+  [2, 5, 8],
+  [3, 7, 4],
+  [1, 6, 9],
+  [4, 2, 0],
 ];
 
 console.log(array);
 
-const row = question('0 ~ 4 중 출력할 행을 입력해주세요..');
+const row = question('0 ~ 3 중 출력할 행을 입력해주세요..');
 
 console.log(array[row]);
 
