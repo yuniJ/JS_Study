@@ -22,5 +22,8 @@
     "readline-sync": "^1.4.10",
     "real-turtle": "^1.0.21",
     "xo": "^0.47.0"
+  },
+  "devDependencies": {
+    "csv-parse": "5.0.4"
   }
 }
