@@ -10,7 +10,7 @@ const author = question('작가를 입력해주세요...');
 const date = question('발행일을 입력해주세요...');
 const addData = title + ',' + author + ',' + date;
 
-fs.appendFile(newFile, '\n' + addData, function (error) {
+fs.appendFile(newFile, addData + '\n', function (error) {
   if (error) throw error;
 });
 

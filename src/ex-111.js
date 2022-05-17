@@ -17,7 +17,7 @@ const data = [
 function changeText() {
   let dataList = '';
   for (const list of data) {
-    dataList += '\n' + list;
+    dataList += list + '\n';
   }
   // console.log(dataList);
   return dataList;

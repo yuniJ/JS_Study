@@ -24,6 +24,7 @@
     "xo": "^0.47.0"
   },
   "devDependencies": {
-    "csv-parse": "5.0.4"
+    "csv-parse": "5.0.4",
+    "json2csv": "5.0.7"
   }
 }
